@@ -1,0 +1,64 @@
+/* Custom font */ 
+
+
+/* Typing a comment cmd+k+c */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* GENERAL */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    height: 100%;
+    width: 100%;
+    margin: 0; 
+    /* the above is because I don't want any margins by default. check this parameter out again and make notes */
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+h1,h2,h5,p {
+    margin: 0;
+}
+
+.icon{
+    height: 2rem;
+    /* 1 rem = 16 pixels */
+    width: 2rem;
+    margin: 0 0.5rem;
+
+}
+
+/* HERO  */
+#hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* Centering the object  */
+    text-align: center;
+
+}
+
+#hero__animation {
+    animation-name: hover;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    height: 25rem;
+    width: 25rem;
+    max-height: 100vh;
+    max-width: 100vh;
+
+}
+
+#hero__animation__img {
+    background-image: var(--tl-1);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    
+}
