@@ -62,3 +62,140 @@ h1,h2,h5,p {
     background-size: cover;
     
 }
+
+/* GRID COMMON STYLES */
+
+#grid {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#grid__tl__btn,
+#grid__tr__btn,
+#grid__bl__btn,
+#grid__br__btn {
+
+    height: 18.75rem;
+    width: 18.75rem;
+    background: var(--bg);
+    color: var(--text);
+    border: var(--border);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    z-index: 100;
+    border-radius: 40%;
+    transition: transform 0.2 ease-in-out;
+
+}
+
+
+#grid__tl__content,
+#grid__tr__content,
+#grid__bl__content,
+#grid__br__content { 
+
+    position: absolute;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: var(--text-alt);
+}
+
+
+#grid__tl__btn, 
+#grid__tr__btn {
+
+    padding-bottom: 0.5rem;
+    align-items: flex-end;
+}
+
+
+#grid__bl__btn, 
+#grid__br__btn {
+
+    padding-bottom: 0.5rem;
+}
+
+
+#grid__tl__btn:active, 
+#grid__br__btn:active {
+
+    transform: rotate(-45deg) scale(1.05);
+}
+
+
+#grid__bl__btn:active, 
+#grid__br__btn:active {
+
+    transform: rotate(45deg) scale(1.05);
+}
+
+
+/* Top Left Corner  */
+
+#grid__tl__btn { 
+    top: -11.5rem;
+    left: -11.5rem;
+    transform: rotate(-45deg);
+
+}
+
+#grid__tl__content {
+    width: 30vw;
+    top: 10vh;
+    left: 0;
+    transform: translateX(-100vw) translateY(-100vh);
+    
+}
+
+article { 
+    background: rgb(245,245,245);
+    font-size: 0.8rem;
+    list-style: none;
+    border: var(--border);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 8.75rem;
+    min-width: 8.75rem;
+}
+
+article h2 { 
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+article p { 
+    padding-bottom: 0.3rem;
+}
+
+article h2,
+article p {
+
+    color: #333;
+}
+
+.cards { 
+    padding: 0;
+
+}
+
+.card__content { 
+    display: flex;
+    align-items: center;
+}
+
+.card__content__text { 
+    color: var(--text);
+    text-align: left;
+    margin: 0 1rem;
+}
+
+
